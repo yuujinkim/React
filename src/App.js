@@ -1,16 +1,16 @@
-import React from 'react';
-import User from './User';
-import ErrorBoundary from './ErrorBoundary';
+import React, { useState, useEffect } from 'react';
+import './App.css';
 
 function App() {
-  const user = {
-    id: 1,
-    username: 'velopert'
-  };
+  const [value, setValue] = useState('');
+  useEffect(() => {
+    console.log(value);
+  }, []);
+
   return (
-    <ErrorBoundary>
-      <User />
-    </ErrorBoundary>
+    <div>
+      <p>와우</p>
+    </div>
   );
 }
 
